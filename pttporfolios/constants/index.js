@@ -150,6 +150,16 @@ const technologies = {
       link: "https://www.mysql.com/",
     },
     {
+      name: "PostgreSQL",
+      icon: "/assets/tech/postgresql.png",
+      link: "https://www.postgresql.org",
+    },
+    {
+      name: "MongoDB",
+      icon: "/assets/tech/mongodb.svg",
+      link: "https://www.mongodb.com/",
+    },
+    {
       name: "Firebase",
       icon: "/assets/tech/firebase.svg",
       link: "https://firebase.google.com/",
