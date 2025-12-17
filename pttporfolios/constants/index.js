@@ -86,11 +86,7 @@ const technologies = {
       icon: "/assets/tech/tailwindcss.svg",
       link: "https://tailwindcss.com/",
     },
-    {
-      name: "Spring Boot", // Đã thêm từ CV
-      icon: "/assets/tech/spring.svg", // Cần thêm file icon này
-      link: "https://spring.io/projects/spring-boot",
-    },
+    
   ],
   libraries: [
     {
@@ -143,28 +139,52 @@ const technologies = {
       link: "https://nodejs.org/en",
     },
   ],
-  databases: [
+   databases: [
     {
       name: "MySQL",
       icon: "/assets/tech/my-sql.png",
       link: "https://www.mysql.com/",
     },
     {
+      name: "PostgreSQL",
+      icon: "/assets/tech/postgresql.png",
+      link: "https://www.postgresql.org",
+    },
+    {
+      name: "MongoDB",
+      icon: "/assets/tech/mongodb.svg",
+      link: "https://www.mongodb.com/",
+    },
+    {
       name: "Firebase",
       icon: "/assets/tech/firebase.svg",
       link: "https://firebase.google.com/",
     },
+
   ],
 };
 
 // CẬP NHẬT PHẦN EXPERIENCE THÀNH EDUCATION & CERTIFICATE
 const experiences = [
   {
+    title: "Intern Frontend Developer",
+    company_name: "BitGroup",
+    icon: "/assets/company/Bit Group.jfif", // Bạn nhớ thêm logo bitgroup vào folder assets
+    iconBg: "#383E56",
+    date: "Oct 2025 – Dec 2025",
+    points: [
+      "Project: Stadium Booking Platform & E-commerce.",
+      "Tech Stack: Next.js, NestJS, TypeScript, PostgreSQL, Prisma.",
+      "Designed complex DB schemas for Booking (Slots), E-commerce (Cart, Orders), and User management.",
+      "Implemented RBAC Authentication (Admin, Owner, User) and developed RESTful APIs for booking/product operations."
+    ],
+  },
+  {
     title: "Information Technology Student",
     company_name: "NongLam University",
     icon: "/assets/company/nlu-logo.jfif", // Bạn cần bỏ logo trường vào đây
     iconBg: "#383E56",
-    date: "2021 - Oct 2025 (Expected)",
+    date: "2021 - Oct 2025",
     points: [
       "Solid academic foundation in core web technologies like HTML, CSS, and JavaScript.",
       "Hands-on experience in building user interfaces and web applications using React and Next.js.",
@@ -198,11 +218,12 @@ const testimonials = [
 ];
 
 // CẬP NHẬT PHẦN PROJECTS TỪ CV
+// CẬP NHẬT PHẦN PROJECTS THEO ĐÚNG THỨ TỰ TRONG CV
 const projects = [
   {
     name: "Trello Clone",
     description:
-      "A full-stack, real-time web application similar to Trello. Features include drag-and-drop tasks, light/dark theme support, data import/export, and instant updates across boards using real-time synchronization.",
+      "Real-time task management app similar to Trello. Features include drag-and-drop tasks, light/dark theme support, WebSocket board sync, and full CRUD operations.",
     tags: [
       {
         name: "next.js",
@@ -221,59 +242,64 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: "/assets/projects/trello.png", // Bạn cần lưu ảnh dự án tên trello.png
+    image: "/assets/projects/Project image 3.png",
     source_code_link: "https://github.com/tin2709/MyTrelloClone",
-    deployed_link: "https://github.com/tin2709/MyTrelloClone", // Nếu có link deploy thì thay vào
+    deployed_link: "https://github.com/tin2709/MyTrelloClone",
   },
   {
     name: "Computer Room Management",
     description:
-      "A modern management website to control computer rooms with 3 roles: Admin, Teacher, Employee. Features JWT Auth, QRCode for statistics, and Chatbot integration for user support.",
+      "Management system for university computer labs with Role-based access (Admin/Teacher). Features include QR Code statistics, Chatbot integration, and Device tracking.",
     tags: [
+      {
+        name: "spring-boot",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "springboot",
-        color: "green-text-gradient",
       },
       {
         name: "mysql",
         color: "pink-text-gradient",
       },
       {
-        name: "ant-design",
+        name: "google-auth",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/room-management.png", // Bạn cần lưu ảnh dự án tên room-management.png
+    image: "/assets/projects/Project image 2.png",
     source_code_link:
       "https://github.com/tin2709/TieuLuanTotNghiepBackEnd",
     deployed_link:
       "https://github.com/tin2709/TieuLuanTotNghiepBackEnd",
   },
   {
-    name: "App Chat",
+    name: "Online Video Editor & AI",
     description:
-      "Real-time web chat using WebSocket/Firebase to send messages, GIFs, and files. Designed for better user experience with Google Auth, Dark/Light interface themes, and avatar customization.",
+      "Web-based video editor with AI subtitles. Features WebSocket progress tracking, AI Auto-transcription (Whisper) & Translation, Canvas-based styling, and background FFmpeg processing.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "python",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "ffmpeg",
         color: "pink-text-gradient",
       },
+      {
+        name: "redux",
+        color: "orange-text-gradient",
+      },
     ],
-    image: "/assets/projects/chat-app.png", // Bạn cần lưu ảnh dự án tên chat-app.png
-    source_code_link: "https://github.com/Tintwentyseven/DoAnLapTrinhFE/tree/Tin",
-    deployed_link: "https://github.com/Tintwentyseven/DoAnLapTrinhFE/tree/Tin",
+    // Bạn nhớ thêm ảnh dự án này vào thư mục assets và đổi tên file tương ứng nhé
+    image: "/assets/projects/Project image.png", 
+    source_code_link: "https://github.com/tin2709/DoAnCDWeb",
+    deployed_link: "https://github.com/tin2709/DoAnCDWeb",
   },
 ];
 
