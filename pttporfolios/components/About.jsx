@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { socials } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import EmailIcon from "./../public/assets/icons/email.svg"; // Đảm bảo bạn có file icon này
+import EmailIcon from "./../public/assets/icons/email.svg"; 
 
 function About() {
   return (
@@ -20,6 +20,7 @@ function About() {
         <p className={"sectionSubText text-gray-300"}>Introduction</p>
         <h2 className={"sectionHeadText text-white"}>Overview.</h2>
       </motion.div>
+      
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         initial="hidden"
@@ -27,14 +28,16 @@ function About() {
         viewport={{ once: true, amount: 0.25 }}
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
-        <div>
-          Hello! I&apos;m <strong>Pham Trung Tin</strong>, an enthusiastic <strong>Frontend Developer Intern</strong>. 
-          I have a solid academic foundation in core web technologies like HTML, CSS, and JavaScript. 
-          Currently, I am a senior at <strong>NongLam University</strong> majoring in Information Technology (Expected graduation: Oct 2025).
+        <div className="text-justify">
+          Hello! I&apos;m <strong>Pham Trung Tin</strong>, a passionate <strong> Intern Fullstack Developer</strong> based in Ho Chi Minh City. 
+       
           <br className="sm:block hidden" />
           <br />
-          I possess hands-on experience in building user interfaces and web applications using modern frameworks like <strong>React and Next.js</strong>. 
-          I am eager to apply my foundational knowledge and contribute actively to creating high-quality web products.
+          I specialize in building <strong>end-to-end web applications</strong>, combining modern Frontend frameworks like <strong>React and Next.js</strong> with scalable Backend solutions using <strong>Spring Boot and NestJS</strong>. 
+          I have hands-on experience in <strong>database schema design</strong> (PostgreSQL, MySQL), <strong>real-time features</strong> (WebSockets), and <strong>AI-powered processing</strong> (FFmpeg & Whisper AI).
+          <br />
+          <br />
+          With a strong foundation in <strong>TypeScript</strong> and a <strong>TOEIC score of 835</strong>, I focus on writing clean, maintainable code and delivering high-performance user experiences. I am always eager to learn new technologies and collaborate on professional projects.
         </div>
         
         {/* Phần Email */}
@@ -50,7 +53,7 @@ function About() {
           </Link>
         </div>
 
-        {/* Phần Social Icons (LinkedIn, Github...) lấy từ constants */}
+        {/* Phần Social Icons */}
         <div className="flex gap-5 items-center">
           {socials.map((social) => (
             <Link
@@ -66,14 +69,14 @@ function About() {
 
         {/* Nút tải CV */}
         <Link
-          href="/document/PhamTrungTinCVInternFE.pdf" // Bạn nhớ đổi tên file PDF của bạn trong thư mục public/document
+          href="/document/PTTCVFullStack.pdf" 
           target="_blank"
           rel="noreferrer"
           className="w-fit"
         >
           <div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
             <div className="original bg-primary text-white px-7 py-2">
-              Resume
+              View Full Resume
             </div>
             <div className="letters">
               <span>R</span>

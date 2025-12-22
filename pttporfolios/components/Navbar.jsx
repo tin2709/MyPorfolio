@@ -73,7 +73,7 @@ function Navbar() {
 							Pham Trung Tin &nbsp;
 								<span className="lg:block hidden">
 									{" "}
-									| Frontend Developer
+									| Web Developer
 								</span>
 							</p>
 						</Link>

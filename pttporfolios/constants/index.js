@@ -42,6 +42,10 @@ const services = [
     icon: <FrontendIcon />,
   },
   {
+    title: "Backend Developer",
+    icon: <BackendIcon />,
+  },
+  {
     title: "Problem Solving",
     icon: <ProblemSolvingIcon />,
   },
@@ -86,6 +90,16 @@ const technologies = {
       icon: "/assets/tech/tailwindcss.svg",
       link: "https://tailwindcss.com/",
     },
+     {
+      name: "Nestjs",
+      icon: "/assets/tech/nestjs.svg",
+      link: "https://nestjs.com/",
+    },
+    {
+      name: "Spring Boot",
+      icon: "/assets/tech/spring.svg",
+      link: "https://spring.io/projects/spring-boot",
+    },
     
   ],
   libraries: [
@@ -109,6 +123,11 @@ const technologies = {
       icon: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
       link: "https://redux.js.org",
     },
+    {
+      name: "Ant design",
+      icon: "/assets/tech/ant-design-dark-theme.svg",
+      link: "https://ant.design/",
+    },
   ],
   tools: [
     {
@@ -130,6 +149,11 @@ const technologies = {
       name: "Figma",
       icon: "/assets/tech/figma.svg",
       link: "https://www.figma.com/",
+    },
+    {
+      name: "Docker",
+      icon: "/assets/tech/docker.svg",
+      link: "https://www.docker.com/",
     },
   ],
   environments: [
@@ -160,6 +184,11 @@ const technologies = {
       icon: "/assets/tech/firebase.svg",
       link: "https://firebase.google.com/",
     },
+    {
+      name: "Prisma",
+      icon: "/assets/tech/prisma.svg",
+      link: "https://www.prisma.io/",
+    },
 
   ],
 };
@@ -167,7 +196,7 @@ const technologies = {
 // CẬP NHẬT PHẦN EXPERIENCE THÀNH EDUCATION & CERTIFICATE
 const experiences = [
   {
-    title: "Intern Frontend Developer",
+    title: "Intern FullStack Developer",
     company_name: "BitGroup",
     icon: "/assets/company/Bit Group.jfif", // Bạn nhớ thêm logo bitgroup vào folder assets
     iconBg: "#383E56",
@@ -209,9 +238,9 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Enthusiastic Frontend Developer Intern with a solid academic foundation.",
+      "Enthusiastic Web Developer Intern with a solid academic foundation.",
     name: "Pham Trung Tin",
-    designation: "Frontend Intern",
+    designation: "FullStack Intern",
     company: "Portfolio",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
@@ -317,7 +346,7 @@ const socials = [
 ];
 
 const heroTexts = [
-  "Frontend Developer Intern",
+  "Web Developer",
   500,
   "React/Next.js Enthusiast",
   500,
