@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 
 import "@/styles/globals.css";
+import '../styles/portal.css';
 
 import { PreLoader } from "@/components/Loader";
 

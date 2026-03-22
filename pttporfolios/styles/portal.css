@@ -1,0 +1,123 @@
+/* Container bao phủ */
+.portal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 50%, #1a2a3a, #000);
+    /* Màu tối cho portal */
+    overflow: hidden;
+}
+
+/* Hiệu ứng 5 div của bạn */
+.wobble-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    --speed: 150ms;
+}
+
+.wobble-background div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(var(--x, -50%), var(--y, -50%)) rotate(0deg);
+    font-size: 20vmin;
+    width: 3.5em;
+    /* Tăng kích thước một chút để bao quát grid */
+    height: 3.5em;
+    border-radius: 90% 95% 85% 105%;
+    background: #0f0;
+    mix-blend-mode: screen;
+    filter: hue-rotate(0deg);
+    animation: wobble calc(var(--speed) * var(--t)) linear infinite;
+    box-shadow: 0 0 .5em .2em #000 inset, 0 0 .15em 0 #fff;
+    opacity: 0.6;
+}
+
+@keyframes wobble {
+    to {
+        filter: hue-rotate(360deg);
+        transform: translate(var(--x), var(--y)) rotate(360deg);
+    }
+}
+
+/* Cấu hình cho từng div theo code của bạn */
+.wobble-background div:nth-child(1) {
+    --x: -53%;
+    --y: -53%;
+    --t: 37;
+}
+
+.wobble-background div:nth-child(2) {
+    --x: -47%;
+    --y: -52%;
+    --t: 58;
+}
+
+.wobble-background div:nth-child(3) {
+    --x: -45%;
+    --y: -50%;
+    --t: 46;
+}
+
+.wobble-background div:nth-child(4) {
+    --x: -53%;
+    --y: -45%;
+    --t: 72;
+}
+
+.wobble-background div:nth-child(5) {
+    --x: -55%;
+    --y: -45%;
+    --t: 62;
+}
+
+/* Nội dung Text và Grid phía trên hiệu ứng */
+.portal-content {
+    position: relative;
+    z-index: 10;
+    /* Luôn nằm trên lớp div wobble */
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+}
+
+.portal-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.screenshot-item img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.screenshot-item:hover img {
+    transform: scale(1.05);
+    border-color: #0f0;
+}
+
+.close-btn {
+    margin-top: 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+}
