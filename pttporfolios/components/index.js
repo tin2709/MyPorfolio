@@ -8,6 +8,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import FloatingDock from "./FloatingDock";
+import OpenSource from "./OpenSource";
 
 export {
 	Hero,
@@ -19,5 +20,6 @@ export {
 	Feedbacks,
 	Contact,
 	StarsCanvas,
-	FloatingDock
+	FloatingDock,
+	OpenSource,
 };

@@ -26,6 +26,8 @@ const navLinks = [
     id: "projects",
     title: "Projects",
   },
+  { id: "opensource", title: "Open Source" }, // Thêm dòng này
+
   {
     id: "contact",
     title: "Contact",
