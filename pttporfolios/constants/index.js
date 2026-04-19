@@ -200,7 +200,7 @@ const experiences = [
     company_name: "BitGroup",
     icon: "/assets/company/Bit Group.jfif", // Bạn nhớ thêm logo bitgroup vào folder assets
     iconBg: "#383E56",
-    date: "Oct 2025 – Dec 2025",
+    date: "Oct 2025 – March 2026",
     points: [
       "Project: Stadium Booking Platform & E-commerce.",
       "Tech Stack: Next.js, NestJS, TypeScript, PostgreSQL, Prisma.",

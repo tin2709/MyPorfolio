@@ -8,6 +8,7 @@ import {
   StarsCanvas,
   Tech,
   Works,
+  FloatingDock
 } from "@/components";
 import HeroBackground from "@/components/HeroBackground";
 import EarthContainer from "@/components/EarthContainer";
@@ -123,6 +124,8 @@ export default function Portfolio({ loading }) {
           </div>
         </div>
       )}
+      <FloatingDock />
+
     </main>
   );
 }
